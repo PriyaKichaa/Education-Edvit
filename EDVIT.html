@@ -1,0 +1,379 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>EDVIT</title> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+
+    <script>  
+        const name = document.getElementById('Name').value;
+        const email = document.getElementById('Email').value;
+        const phone = document.getElementById('Mobile').value;
+        const msg=document.getElementById('Your Message for Us').value;
+
+    // Create an empty workbook
+        const wb = XLSX.utils.book_new();
+
+    // Create a new worksheet and add data to it
+        const ws = XLSX.utils.json_to_sheet([{ Name: name, Email: email, Mobile: phone, Message:msg }]);
+
+    // Add the worksheet to the workbook
+        XLSX.utils.book_append_sheet(wb, ws, 'Form Data');
+
+// Save the workbook as an Excel file
+XLSX.writeFile(wb, 'form-data.xlsx');
+     </script>  
+
+    <style> 
+
+        @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); 
+
+        body 
+        { 
+
+            margin: 0; 
+
+            box-sizing: border-box; 
+
+        } 
+
+ 
+
+        .container { 
+
+            line-height: 150%; 
+
+        } 
+
+ 
+
+        .header { 
+
+            display: flex; 
+
+            justify-content: space-between; 
+
+            align-items: center; 
+
+            padding: 15px; 
+
+            background-color: #e9e9e9; 
+
+        } 
+
+ 
+
+        .header h1 { 
+
+            color: #222222; 
+
+            font-size: 30px; 
+
+            font-family: "Pacifico", cursive; 
+
+        } 
+
+ 
+
+        .header .social a { 
+
+            padding: 0 5px; 
+
+            color: #222222; 
+
+        } 
+
+ 
+
+        .left { 
+
+            float: left; 
+
+            width: 180px; 
+
+            margin: 0; 
+
+            padding: 1em; 
+
+        } 
+
+ 
+
+        .content { 
+
+            margin-left: 190px; 
+
+            border-left: 1px solid #d4d4d4; 
+
+            padding: 1em; 
+
+            overflow: hidden; 
+
+        } 
+
+ 
+
+        ul { 
+
+            list-style-type: none; 
+
+            margin: 0; 
+
+            padding: 0; 
+
+            font-family: sans-serif; 
+
+        } 
+
+ 
+
+        li a { 
+
+            display: block; 
+
+            color: #000; 
+
+            padding: 8px 16px; 
+
+            text-decoration: none; 
+
+        } 
+
+ 
+
+        li a.active { 
+
+            background-color: #46badd; 
+
+            color: white; 
+
+        } 
+
+ 
+
+        li a:hover:not(.active) { 
+
+            background-color: #29292a; 
+
+            color: white; 
+
+        } 
+
+ 
+
+        table { 
+
+            font-family: arial, sans-serif; 
+
+            border-collapse: collapse; 
+
+            width: 100%; 
+
+            margin: 30px 0; 
+
+        } 
+
+ 
+
+        td, 
+
+        th { 
+
+            border: 1px solid #dddddd; 
+
+            padding: 8px; 
+
+        } 
+
+ 
+
+        tr:nth-child(1) { 
+
+            background-color: #46badd; 
+
+            color: white; 
+
+        } 
+
+ 
+
+        tr td i.fas { 
+
+            display: block; 
+
+            font-size: 35px; 
+
+            text-align: center; 
+
+        } 
+
+ 
+
+        .footer { 
+
+            padding: 15px 20px; 
+
+            background-color: #2e3550; 
+
+            color: white; 
+
+            text-align: center; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+ 
+
+<body> 
+
+    <div class="container"> 
+
+        <header class="header"> 
+
+            <h1>EDBIT</h1> 
+
+            <div class="social"> 
+
+                <a href="#"><i class="fab fa-facebook"></i></a> 
+
+                <a href="#"><i class="fab fa-instagram"></i></a> 
+
+                <a href="#"><i class="fab fa-twitter"></i></a> 
+
+            </div> 
+
+        </header> 
+
+        <aside class="left"> 
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.1fYT18okXPDOB7MXlxpOvAHaFF&pid=Api&P=0"width="160px" /> 
+
+        <ul> 
+
+            <li><a class="active" href="#home">Home</a></li> 
+
+            <li><a href="https://ngodarpan.gov.in/index.php/home/statewise", target="_blank">Contact NGOs</a></li> 
+
+            <li><a href="mailto: edvitmail@gmail.com">Contact US</a></li> 
+
+            <li><a href="#about">About US</a></li> 
+
+            <li><a href="https://elomia.com/app/session/1:96133363670:1680941253729", target="_blank">Mental Health Chatbot </a></li>
+
+        </ul> 
+
+        <br><br> 
+
+        <p> 
+
+            "Education breeds confidence. Confidence breeds hope. Hope breeds peace."<br>- Daily OATH 
+
+        </p> 
+
+    </aside> 
+
+    <main class="content"> 
+
+        <h2>Objective</h2> 
+
+        <p> 
+
+            To help educate individuals in need. 
+            <br> Learn our ASL skills module and help blind, deaf, dumb people to communicate.
+            <br> NOW! 
+            <br>And earn EDVIT coins to avail exciting prices and coupons. 
+
+        </p> 
+
+        <h2>Announcements and Notifications</h2> 
+
+        <p> 
+
+            ****************                           **************** 
+
+        </p> 
+
+        <hr><br> 
+
+        <h2>Check out the amazing learning options</h2> 
+
+        <table> 
+
+            <tr> 
+
+                <th><a href="https://www.startasl.com/my-courses/", target="_blank">ASL SKILLS</a></th> 
+
+                <th>EDVIT COINS</th> 
+
+                <th>AVAIL COUPONS AND REWARDS</th> 
+
+            </tr> 
+
+            <tr> 
+
+                <td><i class="fas fa-book"></i></td> 
+
+                <td><i class="fas fa-coins"></i></td> 
+
+                <td><i class="fas fa-certificate"></i></td> 
+
+            </tr> 
+
+            <tr> 
+
+                <td>Speaking and Listening</td> 
+
+                <td>Redeem and win incentives</td> 
+
+                <td>Boost up resume and social servive activities</td> 
+
+            </tr> 
+
+            <tr> 
+
+            </table> 
+
+            <form> 
+
+
+                <label> Name: <input type="text" name="name"> </label><br>
+
+                <label> Email: <input type="text" name="email"></label><br> 
+
+                <label> Mobile: <input type="text" name="mobile"> </label><br> 
+
+                <label> Your Message for Us: <textarea name="message" rows="5" cols="30"></textarea></label><br> 
+
+                <input type="submit" value="Submit" /><br> 
+
+            <closeform></closeform> 
+
+        </form> 
+
+    </main> 
+
+    <footer class="footer"> 
+
+        © Copyright EDVIT.com 
+
+    </footer> 
+
+</div> 
+
+</body> 
+
+ 
+
+</html> 
